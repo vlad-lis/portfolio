@@ -47,6 +47,9 @@
         "ignoreStrings": true,
         "ignoreTemplateLiterals": true
       }
+    ],
+    "linebreak-style": [
+      "off"
     ]
   }
 }
