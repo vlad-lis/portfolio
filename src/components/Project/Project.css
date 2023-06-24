@@ -1,0 +1,79 @@
+.project {
+  padding-bottom: 15px;
+}
+
+.project__container {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__info {
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.project__name {
+  margin: 0;
+  font-size: 17px;
+}
+
+.project__brief {
+  margin: 0;
+  font-size: 14px;
+}
+
+.project__details {
+  margin: 0;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.project__details_collapsed {
+  display: none;
+}
+
+.project__details-btn {
+  margin: 7px 0 0 0;
+  padding: 0;
+  border: 1px solid;
+  border-color: #8e8d8a;
+  width: 120px;
+  height: 24px;
+  font-size: 14px;
+  transition: all .4s;
+}
+
+.project__details-btn:hover {
+  cursor: pointer;
+  background-color: #b8b8b6;
+  transition: all .4s;
+}
+
+.project__link {
+  font-size: 15px;
+  text-decoration: none;
+  color: #5a5957;
+  display: flex;
+  max-height: 25px;
+  align-items: center;
+  gap: 7px;
+}
+
+.project__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.project__link-btn {
+  margin-top: 3px;
+  background-image: url(../../images/arrow-btn.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
