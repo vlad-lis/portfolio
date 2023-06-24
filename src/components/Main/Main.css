@@ -23,3 +23,7 @@
   border-bottom: 1px solid;
   border-color: #8e8d8a;
 }
+
+.main__project_last {
+  border: none;
+}

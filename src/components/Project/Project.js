@@ -24,7 +24,7 @@ function Project({ project }) {
           <div className="project__link-btn"></div>
         </a>
       </div>
-      <p className={detailsClass}>{projectContent.tools} {project.tools}</p>
+      <p className={`${detailsClass} ${detailsClass === 'project__details' ? 'project__details_margin' : ''}`}>{projectContent.tools} {project.tools}</p>
       <p className={detailsClass}>{project.details}</p>
     </div>
   );
