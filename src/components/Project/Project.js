@@ -14,6 +14,21 @@ function Project({ project }) {
     setExpandedDetails(!expandedDetails);
   };
 
+  const addReadmeLink = (text, link) => {
+    const regex = /(\bREADME\b|\n)/g;
+
+    return text.split(regex).map((part, index) => {
+      if (part === 'README') {
+        return (
+          <a key={index} className="project__details-readme" href={link} target="_blank" rel="noreferrer">
+            {part}
+          </a>
+        );
+      }
+      return part === '\n' ? <br key={index} /> : part;
+    });
+  };
+
   return (
     <div className="project">
       <div className="project__container">
@@ -39,7 +54,7 @@ function Project({ project }) {
         </div>
         <div className="project__details-text-container">
           <p className="project__details-heading">{description}</p>
-          <p className="project__details-text">{project.details}</p>
+          <p className="project__details-text">{addReadmeLink(project.details, project.readme_link)}</p>
         </div>
       </div>
     </div>

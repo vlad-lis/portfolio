@@ -55,8 +55,8 @@
   line-height: 17px;
 }
 
-.project__details_margin {
-  margin: 7px 0;
+.project__details-readme {
+  color: black;
 }
 
 .project__details-btn {
