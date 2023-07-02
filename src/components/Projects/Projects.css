@@ -1,4 +1,4 @@
-.main {
+.projects {
   flex: 1;
   background-color: #FFFFFF;
   width: 100%;
@@ -6,11 +6,11 @@
   align-self: center;
 }
 
-.main__container {
+.projects__container {
   padding: 20px 50px;
 }
 
-.main__projects {
+.projects__list {
   list-style: none;
   margin: 15px 0 0 0;
   padding: 0;
@@ -19,11 +19,11 @@
   gap: 20px
 }
 
-.main__project {
+.projects__project {
   border-bottom: 1px solid;
   border-color: #8e8d8a;
 }
 
-.main__project_last {
+.projects__project_last {
   border: none;
 }

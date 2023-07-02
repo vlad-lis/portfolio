@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Header from '../Header/Header';
-import Main from '../Main/Main';
+import Projects from '../Projects/Projects';
+import About from '../About/About';
 import Footer from '../Footer/Footer';
 
 function App() {
@@ -10,14 +11,14 @@ function App() {
         <Route path='/' element={
           <>
             <Header />
-            <Main />
+            <Projects />
             <Footer />
           </>
         } />
         <Route path='/about' element={
           <>
             <Header />
-            <Main />
+            <About />
             <Footer />
           </>
         } />

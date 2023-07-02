@@ -1,0 +1,16 @@
+.about {
+  flex: 1;
+  background-color: #FFFFFF;
+  width: 100%;
+  max-width: 768px;
+  align-self: center;
+}
+
+.about__container {
+  padding: 20px 50px;
+}
+
+.about__title {
+  font-size: 17px;
+  font-weight: 500;
+}

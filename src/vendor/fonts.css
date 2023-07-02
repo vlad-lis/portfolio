@@ -4,3 +4,24 @@
   font-weight: 400;
   src: url("./fonts/RobotoMono-VariableFont_wght.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 400;
+  src: url("./fonts/Ubuntu-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: bold;
+  font-weight: 500;
+  src: url("./fonts/Ubuntu-Bold.ttf") format("truetype");
+}
