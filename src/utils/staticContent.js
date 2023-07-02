@@ -87,8 +87,17 @@ const projects = [
 
 const about = {
   title: 'What is this?',
-  contacts: 'C- PLACEHOLDER',
-  info: 'PLACEHOLDER This web-site is made as an addition to a CV to display some of my projects',
+  briefInfo: 'This is a minimalistic React application that was created as an addition to a CV, serving as a list of projects along with their descriptions.',
+  projectsInfo: 'These projects do not necessarily have practical use; rather, they were created either to test and try certain tools or to demonstrate the author\'s ability to use such tools or programming languages.',
+  repositoryInfo: 'If you\'d like to examine the source code of this application, you\'re welcome to browse its GitHub repository by clicking ',
+  repositoryLinkText: 'this link.',
+  repositoryLinkUrl: 'https://github.com/vlad-lis/portfolio',
+  contacts: 'Contacts:',
+  emailTitle: 'Email: ',
+  emailAddress: 'lis.vladislav@gmail.com',
+  telegramTitle: 'Telegram: ',
+  telegramHref: 'vladislavlis',
+  telegramName: '@vladislavlis',
 };
 
 export {

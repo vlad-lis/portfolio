@@ -31,6 +31,7 @@
   color: black;
   border: 2px solid;
   border-color: #eae7dc;
+  text-underline-offset: 7px;
 }
 
 .header__link:hover {
@@ -42,5 +43,18 @@
 
 .header__link_active {
   text-decoration: underline;
-  text-underline-offset: 7px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 424px) {
+  .header__container {
+    padding: 10px 25px 15px 10px;
+  }
+
+  .header__nav {
+    gap: 5px;
+  }
+
+  .header__link {
+    font-size: 14px;
+  }
 }
