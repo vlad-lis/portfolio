@@ -30,7 +30,7 @@
 }
 
 .project__details_expanded {
-  margin-top: 10px;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -39,19 +39,19 @@
 .project__details-text-container {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
 }
 
 .project__details-heading {
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 17px;
   font-weight: 500;
 }
 
 .project__details-text {
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 17px;
 }
 
@@ -129,7 +129,7 @@
   }
 
   .project__name {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .project__brief {
@@ -137,7 +137,7 @@
   }
 
   .project__link {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .project__link-btn {
@@ -150,7 +150,11 @@
     font-size: 12px;
   }
 
+  .project__details-heading {
+    font-size: 14px;
+  }
+
   .project__details-text {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
