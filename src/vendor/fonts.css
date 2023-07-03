@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: 'Ubuntu-light';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Ubuntu-Light.ttf") format("truetype");
+}
+
+@font-face {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
