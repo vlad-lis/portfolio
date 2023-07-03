@@ -129,11 +129,11 @@
   }
 
   .project__name {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .project__brief {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .project__link {
@@ -151,10 +151,11 @@
   }
 
   .project__details-heading {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .project__details-text {
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 19px;
   }
 }
