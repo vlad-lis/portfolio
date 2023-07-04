@@ -71,13 +71,6 @@
   transition: all .4s;
 }
 
-/* Touch interaction state */
-.project__details-btn:active,
-.project__details-btn:focus {
-  background-color: #b8b8b6;
-  transition: all .4s;
-}
-
 .project__details-btn:hover {
   cursor: pointer;
   background-color: #b8b8b6;
