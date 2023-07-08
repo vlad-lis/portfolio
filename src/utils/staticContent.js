@@ -40,7 +40,7 @@ const projects = [
   },
   {
     id: 3,
-    name: 'ML - Random Forest Classifier',
+    name: 'ML - Assessment of Vulnerability',
     brief: 'Python, JavaScript',
     tools: 'Python (Scikit-learn, Pandas, Numpy), JavaScript (ReactJS, Express.js), HTML, CSS.',
     details: 'A machine learning model (random forest classifier), which was trained on a dataset from a school-based survey conducted in Argentina in 2018. The model attempts to predict the vulnerability to bullying (target variable) based on provided inputs. It is important to note that the model is created solely for demonstration purposes and does not claim to provide any insights on the issue. \n\nTo facilitate the input process during the demonstration, a simple React application was developed along with an API that features a single endpoint. This endpoint receives inputs, processes them using the Python script (model), and outputs the resulting probability of the target variable being equal to one. \n\nThe project can be run locally as a web application or viewed as a Jupyter Notebook. The creation of the ML model was divided into separate notebooks for data cleaning and model creation. \nScreenshots of the project, instructions on how to run the project locally or view the notebooks, can be found in the README file of the GitHub repository.',
@@ -49,7 +49,7 @@ const projects = [
   },
   {
     id: 4,
-    name: 'ML - Linear Regression',
+    name: 'ML - Car Price Prediction',
     brief: 'Python',
     tools: 'Python (Scikit-learn, Pandas, Numpy)',
     details: 'A machine learning model (linear regression), which aims to predict the price of used cars. The model can be executed either through the terminal as a Python script (prompting for inputs and outputting the predicted price) or viewed as a Jupyter Notebook (which also includes a function that prompts for inputs and outputs the predicted price). \n\nSome results of the predicted car price may be skewed due to the fact that certain makes/models are underrepresented in the provided dataset. However, not all of them were removed during the data cleaning process for demonstration purposes. \n\nScreenshots of the project, instructions on how to run the project locally or view the notebook, can be found in the README file of the GitHub repository.',
@@ -58,6 +58,15 @@ const projects = [
   },
   {
     id: 5,
+    name: 'ML - Song Recommender',
+    brief: 'Python',
+    tools: 'Python (Scikit-learn, Pandas, Numpy)',
+    details: 'A machine learning model (K-Means Clustering) is utilized to recommend songs based on user input and various features such as danceability, energy, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, and tempo. \n\nThe current data set consists of over 40,000 songs, and the accuracy of the recommendations relies on the size and diversity of songs within the data set. \n\nScreenshot of the project can be found in the README file of the GitHub repository.',
+    link: 'https://github.com/vlad-lis/Song-Recommender',
+    readme_link: 'https://github.com/vlad-lis/Song-Recommender#readme',
+  },
+  {
+    id: 6,
     name: 'Card Hub',
     brief: 'JavaScript',
     tools: 'JavaScript (ReactJS, Express.js), HTML, CSS',
@@ -66,7 +75,7 @@ const projects = [
     readme_link: 'https://github.com/vlad-lis/react-mesto-api-full-gha#readme',
   },
   {
-    id: 6,
+    id: 7,
     name: 'Adaptive Web Page',
     brief: 'HTML, CSS',
     tools: 'HTML, CSS',
@@ -75,7 +84,7 @@ const projects = [
     readme_link: 'https://github.com/vlad-lis/russian-travel#readme',
   },
   {
-    id: 7,
+    id: 8,
     name: 'Static Web Page',
     brief: 'HTML, CSS',
     tools: 'HTML, CSS',
