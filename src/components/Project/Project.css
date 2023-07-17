@@ -53,6 +53,7 @@
   margin: 0;
   font-size: 15px;
   line-height: 19px;
+  font-family: "Ubuntu-light", "Arial", sans-serif;
 }
 
 .project__details-readme {
