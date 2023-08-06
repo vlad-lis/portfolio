@@ -3,7 +3,7 @@ import { about } from '../../utils/staticContent';
 function About() {
   const {
     title, contacts, briefInfo, projectsInfo, repositoryInfo, repositoryLinkText, repositoryLinkUrl,
-    emailTitle, emailAddress, telegramTitle, telegramHref, telegramName,
+    emailTitle, emailAddress, telegramTitle, telegramHref, telegramName, linkedInTitle, linkedInAddress,
   } = about;
 
   return (
@@ -28,6 +28,10 @@ function About() {
             <li className="about__contact">
               <p className="about__text about__contact-title">{telegramTitle}</p>
               <a className="about__text about__link" href={`tg://resolve?domain=${telegramHref}`}>{telegramName}</a>
+            </li>
+            <li className="about__contact">
+              <p className="about__text about__contact-title">{linkedInTitle}</p>
+              <a className="about__text about__link" href={linkedInAddress} target='_blank' rel='noreferrer'>{linkedInAddress}</a>
             </li>
           </ul>
         </div>

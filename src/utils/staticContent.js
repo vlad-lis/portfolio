@@ -22,6 +22,15 @@ const footerContent = {
 const projects = [
   {
     id: 1,
+    name: 'Blogicum',
+    brief: 'Python',
+    tools: 'Python (Django), Bootstrap',
+    details: 'Application for creating posts/publications with an image, description, and a comment section. \n\nThe application utilizes Django ORM for database handling (SQLite) and also allows users to create scheduled publications by setting the publication date in the future. The project is deployed via pythonanywhere.com, and the link can be found in the README file of the repository.',
+    link: 'https://github.com/vlad-lis/blogicum',
+    readme_link: 'https://github.com/vlad-lis/blogicum#readme',
+  },
+  {
+    id: 2,
     name: 'Movies Explorer Front-end',
     brief: 'JavaScript',
     tools: 'JavaScript (ReactJS), HTML, CSS',
@@ -30,7 +39,7 @@ const projects = [
     readme_link: 'https://github.com/vlad-lis/movies-explorer-frontend#readme',
   },
   {
-    id: 2,
+    id: 3,
     name: 'Movies Explorer API',
     brief: 'JavaScript',
     tools: 'JavaScript (Express.js, MongoDB).',
@@ -39,7 +48,7 @@ const projects = [
     readme_link: 'https://github.com/vlad-lis/movies-explorer-api#readme',
   },
   {
-    id: 3,
+    id: 4,
     name: 'ML - Assessment of Vulnerability',
     brief: 'Python, JavaScript',
     tools: 'Python (Scikit-learn, Pandas, Numpy), JavaScript (ReactJS, Express.js), HTML, CSS.',
@@ -48,7 +57,7 @@ const projects = [
     readme_link: 'https://github.com/vlad-lis/ML-predict-bullying#readme',
   },
   {
-    id: 4,
+    id: 5,
     name: 'ML - Car Price Prediction',
     brief: 'Python',
     tools: 'Python (Scikit-learn, Pandas, Numpy)',
@@ -57,7 +66,7 @@ const projects = [
     readme_link: 'https://github.com/vlad-lis/Ironhack-midterm#readme',
   },
   {
-    id: 5,
+    id: 6,
     name: 'ML - Song Recommender',
     brief: 'Python',
     tools: 'Python (Scikit-learn, Pandas, Numpy)',
@@ -66,7 +75,7 @@ const projects = [
     readme_link: 'https://github.com/vlad-lis/Song-Recommender#readme',
   },
   {
-    id: 6,
+    id: 7,
     name: 'Card Hub',
     brief: 'JavaScript',
     tools: 'JavaScript (ReactJS, Express.js), HTML, CSS',
@@ -75,7 +84,7 @@ const projects = [
     readme_link: 'https://github.com/vlad-lis/react-mesto-api-full-gha#readme',
   },
   {
-    id: 7,
+    id: 8,
     name: 'Adaptive Web Page',
     brief: 'HTML, CSS',
     tools: 'HTML, CSS',
@@ -84,7 +93,7 @@ const projects = [
     readme_link: 'https://github.com/vlad-lis/russian-travel#readme',
   },
   {
-    id: 8,
+    id: 9,
     name: 'Static Web Page',
     brief: 'HTML, CSS',
     tools: 'HTML, CSS',
@@ -97,7 +106,7 @@ const projects = [
 const about = {
   title: 'What is this?',
   briefInfo: 'This is a minimalistic React application that was created as an addition to a CV, serving as a list of projects along with their descriptions.',
-  projectsInfo: 'These projects do not necessarily have practical use; rather, they were created either to test and try certain tools or to demonstrate the author\'s ability to use such tools or programming languages.',
+  projectsInfo: '',
   repositoryInfo: 'If you\'d like to examine the source code of this application, you\'re welcome to browse its GitHub repository by clicking ',
   repositoryLinkText: 'this link.',
   repositoryLinkUrl: 'https://github.com/vlad-lis/portfolio',
@@ -107,6 +116,8 @@ const about = {
   telegramTitle: 'Telegram: ',
   telegramHref: 'vladislavlis',
   telegramName: '@vladislavlis',
+  linkedInTitle: 'LinkedIn: ',
+  linkedInAddress: 'https://www.linkedin.com/in/vladislav-lis/',
 };
 
 export {
