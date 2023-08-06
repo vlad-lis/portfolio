@@ -58,7 +58,7 @@
   }
 }
 
-@media screen and (min-width: 300px) and (max-width: 424px) {
+@media screen and (min-width: 100px) and (max-width: 424px) {
   .about__container {
     padding: 0 25px;
   }

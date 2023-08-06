@@ -3,7 +3,7 @@ import { about } from '../../utils/staticContent';
 function About() {
   const {
     title, contacts, briefInfo, projectsInfo, repositoryInfo, repositoryLinkText, repositoryLinkUrl,
-    emailTitle, emailAddress, telegramTitle, telegramHref, telegramName, linkedInTitle, linkedInAddress,
+    emailTitle, emailAddress, telegramTitle, telegramHref, telegramName, linkedInTitle, linkedInHref, linkedInName,
   } = about;
 
   return (
@@ -31,7 +31,7 @@ function About() {
             </li>
             <li className="about__contact">
               <p className="about__text about__contact-title">{linkedInTitle}</p>
-              <a className="about__text about__link" href={linkedInAddress} target='_blank' rel='noreferrer'>{linkedInAddress}</a>
+              <a className="about__text about__link" href={linkedInHref} target='_blank' rel='noreferrer'>{linkedInName}</a>
             </li>
           </ul>
         </div>

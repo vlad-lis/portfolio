@@ -117,7 +117,8 @@ const about = {
   telegramHref: 'vladislavlis',
   telegramName: '@vladislavlis',
   linkedInTitle: 'LinkedIn: ',
-  linkedInAddress: 'https://www.linkedin.com/in/vladislav-lis/',
+  linkedInHref: 'https://www.linkedin.com/in/vladislav-lis/',
+  linkedInName: 'in/vladislav-lis',
 };
 
 export {

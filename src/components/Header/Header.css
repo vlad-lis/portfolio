@@ -1,6 +1,7 @@
 .header {
   background-color: #eae7dc;
-  width: 100%;
+  /* background: linear-gradient(to right, rgb(234 231 220 / 0) 5%, #eae7dc 10% 85%, rgb(234 231 220 / 0) 95%); */
+  width: 97vw;
   min-height: 30px;
   display: flex;
   justify-content: center;
@@ -11,6 +12,7 @@
   max-width: 768px;
   display: flex;
   justify-content: flex-end;
+  justify-self: center;
 }
 
 .header__container {
@@ -44,13 +46,19 @@
   text-decoration: underline;
 }
 
-@media screen and (min-width: 300px) and (max-width: 424px) {
+/* @media screen and (max-width: 1023px) {
+  .header {
+    background: linear-gradient(to right, rgb(234 231 220 / 0) 5%, #eae7dc 15% 85%, rgb(234 231 220 / 0) 95%);
+  }
+} */
+
+@media screen and (min-width: 100px) and (max-width: 424px) {
   .header__container {
     padding: 10px 25px 15px 10px;
   }
 
   .header__nav {
-    gap: 5px;
+    gap: 10px;
   }
 
   .header__link {
