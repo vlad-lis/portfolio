@@ -1,7 +1,8 @@
 .header {
   background-color: #eae7dc;
   /* background: linear-gradient(to right, rgb(234 231 220 / 0) 5%, #eae7dc 10% 85%, rgb(234 231 220 / 0) 95%); */
-  width: 97vw;
+  /* width: 97vw; */
+  width: 100%;
   min-height: 30px;
   display: flex;
   justify-content: center;
@@ -30,15 +31,12 @@
   font-weight: bolder;
   text-decoration: none;
   color: black;
-  /* border: 2px solid;
-  border-color: #eae7dc; */
   text-underline-offset: 7px;
 }
 
 .header__link:hover {
   cursor: pointer;
   opacity: .6;
-  /* border: 2px solid; */
   transition: all .4s;
 }
 
