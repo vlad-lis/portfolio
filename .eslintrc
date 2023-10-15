@@ -1,55 +1,35 @@
 {
   "extends": [
-    "airbnb-base",
-    "plugin:react/recommended"
+    "react-app",
+    "react-app/jest",
+    "airbnb",
+    "airbnb/hooks",
+    "prettier",
+    "plugin:prettier/recommended"
   ],
-  "plugins": [
-    "import",
-    "jsx-a11y",
-    "react"
-  ],
-  "parserOptions": {
-    "ecmaVersion": 2021,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
-  "globals": {
-    "React": "writable",
-    "document": "readonly",
-    "localStorage": "readonly"
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
   "rules": {
-    "eslint/no-lonely-if": "off",
-    "no-plusplus": "off",
-    "no-use-before-define": 0,
-    "no-console": "off",
-    "no-underscore-dangle": [
-      "error",
+    "react/jsx-filename-extension": [
+      1,
       {
-        "allow": [
-          "_id"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
-    "prefer-destructuring": "off",
-    "max-len": [
-      "error",
-      {
-        "code": 150,
-        "ignoreComments": true,
-        "ignoreStrings": true,
-        "ignoreTemplateLiterals": true
+    "react/react-in-jsx-scope": "off",
+    "import/prefer-default-export": "off",
+    "react/function-component-definition": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unescaped-entities": "off",
+    "react/button-has-type": "off",
+    "react/no-array-index-key": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.stories.*", "src/stories/**/*", "*.jsx"],
+      "rules": {
+        "import/no-anonymous-default-export": "off",
+        "import/no-extraneous-dependencies": "off",
+        "react/prop-types": "off"
       }
-    ],
-    "linebreak-style": [
-      "off"
-    ]
-  }
+    }
+  ]
 }

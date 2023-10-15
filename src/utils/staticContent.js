@@ -22,82 +22,113 @@ const footerContent = {
 const projects = [
   {
     id: 1,
+    name: 'Lenta project (Hackathon)',
+    brief: 'TypeScript',
+    tools: 'TypeScript, React, CSS (SASS), HTML',
+    details:
+      'This project was developed for the retail company "Lenta." Its primary purpose is to visualize actual sales data and forecasts. Data visualization is achieved using the Chart.js and React-table libraries. The application receives data from the backend, processes it, and then displays corresponding tables and charts with an option to import data into an .xlsx file. \n\nCurrently, due to the absence of complete forecast data provided by the API, the Excel import functionality is limited to actual data, and the charts display data stored in a local JSON file. The description of the project can be fuond in the README file of the repository (in Russian).',
+    link: 'https://github.com/Hackathon-Lenta-Team2/frontend',
+    readme_link: 'https://github.com/Hackathon-Lenta-Team2/frontend#readme',
+  },
+  {
+    id: 2,
+    name: 'BotDepot (in development)',
+    brief: 'JavaScript',
+    tools: 'JavaScript, React, CSS (SASS), HTML',
+    details:
+      "BotsDepot is an application that serves as a marketplace for transport bots. It is currently under development by a small team consisting of frontend and backend developers, UX/UI designers, and QA specialists. The project's primary objective is to provide a platform for bot creators to list their products on the marketplace, and for potential buyers to browse, review, and purchase the bots they require. \n\nMy current role in the development process focuses on the main page, which includes the list of available bots and carousels for banners and categories. These carousels are implemented using the react-multi-carousel library.",
+    link: 'https://github.com/Marketplace-telegram-bots-for-transport/frontend/tree/develop',
+    readme_link:
+      'https://github.com/Marketplace-telegram-bots-for-transport/frontend/tree/develop#readme',
+  },
+  {
+    id: 3,
     name: 'Blogicum',
     brief: 'Python',
     tools: 'Python (Django), Bootstrap',
-    details: 'Application for creating posts/publications with an image, description, and a comment section. \n\nThe application utilizes Django ORM for database handling (SQLite) and also allows users to create scheduled publications by setting the publication date in the future. The project is deployed via pythonanywhere.com, and the link can be found in the README file of the repository.',
+    details:
+      'Application for creating posts/publications with an image, description, and a comment section. \n\nThe application utilizes Django ORM for database handling (SQLite) and also allows users to create scheduled publications by setting the publication date in the future. The project is deployed via pythonanywhere.com, and the link can be found in the README file of the repository.',
     link: 'https://github.com/vlad-lis/blogicum',
     readme_link: 'https://github.com/vlad-lis/blogicum#readme',
   },
   {
-    id: 2,
+    id: 4,
     name: 'Movies Explorer Front-end',
     brief: 'JavaScript',
-    tools: 'JavaScript (ReactJS), HTML, CSS',
-    details: 'This is the front-end component of the final project for the web development course. In addition to the developed API, the application also integrates with a third-party API for searching movies by name. The home page of the project includes information about the project and the author. To access the movie search feature, users need to sign up or sign in first. Once authenticated, they will be redirected to the movie search page where they can search for movies by name and save them to favorites by clicking on the like button. On the saved movies page, users can then browse their saved movies or remove them from favorites. \n\nThe project is deployed on a virtual machine (VM). During the deployment process, the VM (Ubuntu) was configured by setting up an SSH key pair, installing core packages such as Node.js, MongoDB, and Git, and configuring Nginx, PM2, and Certbot. \nThe deployment link, instructions on how to run the project locally, and screenshots of the project can be found in the README file of the GitHub repository.',
+    tools: 'JavaScript, React, HTML, CSS',
+    details:
+      'This is the front-end component of the final project for the web development course. In addition to the developed API, the application also integrates with a third-party API for searching movies by name. The home page of the project includes information about the project and the author. To access the movie search feature, users need to sign up or sign in first. Once authenticated, they will be redirected to the movie search page where they can search for movies by name and save them to favorites by clicking on the like button. On the saved movies page, users can then browse their saved movies or remove them from favorites. \n\nThe project is deployed on a virtual machine (VM). During the deployment process, the VM (Ubuntu) was configured by setting up an SSH key pair, installing core packages such as Node.js, MongoDB, and Git, and configuring Nginx, PM2, and Certbot. \nThe deployment link, instructions on how to run the project locally, and screenshots of the project can be found in the README file of the GitHub repository.',
     link: 'https://github.com/vlad-lis/movies-explorer-frontend',
     readme_link: 'https://github.com/vlad-lis/movies-explorer-frontend#readme',
   },
   {
-    id: 3,
+    id: 5,
     name: 'Movies Explorer API',
     brief: 'JavaScript',
-    tools: 'JavaScript (Express.js, MongoDB).',
-    details: 'This is the back-end component of the final project for the web development course, which is an API that has been deployed and contains multiple endpoints. The API is designed to store new user credentials, allow for profile editing, check login status, process user logout, save movies to favorites, and delete movies from favorites. \n\nThe project is deployed on a virtual machine (VM). During the deployment process, the VM (Ubuntu) was configured by setting up an SSH key pair, installing core packages such as Node.js, MongoDB, and Git, and configuring Nginx, PM2, and Certbot. \nThe deployment link, instructions on how to run the project locally, and a screenshot of a sample request made via Postman can be found in the README file of the GitHub repository.',
+    tools: 'JavaScript, Node.js (Express.js), MongoDB).',
+    details:
+      'This is the back-end component of the final project for the web development course, which is an API that has been deployed and contains multiple endpoints. The API is designed to store new user credentials, allow for profile editing, check login status, process user logout, save movies to favorites, and delete movies from favorites. \n\nThe project is deployed on a virtual machine (VM). During the deployment process, the VM (Ubuntu) was configured by setting up an SSH key pair, installing core packages such as Node.js, MongoDB, and Git, and configuring Nginx, PM2, and Certbot. \nThe deployment link, instructions on how to run the project locally, and a screenshot of a sample request made via Postman can be found in the README file of the GitHub repository.',
     link: 'https://github.com/vlad-lis/movies-explorer-api',
     readme_link: 'https://github.com/vlad-lis/movies-explorer-api#readme',
   },
   {
-    id: 4,
-    name: 'ML - Assessment of Vulnerability',
-    brief: 'Python, JavaScript',
-    tools: 'Python (Scikit-learn, Pandas, Numpy), JavaScript (ReactJS, Express.js), HTML, CSS.',
-    details: 'A machine learning model (random forest classifier), which was trained on a dataset from a school-based survey conducted in Argentina in 2018. The model attempts to predict the vulnerability to bullying (target variable) based on provided inputs. It is important to note that the model is created solely for demonstration purposes and does not claim to provide any insights on the issue. \n\nTo facilitate the input process during the demonstration, a simple React application was developed along with an API that features a single endpoint. This endpoint receives inputs, processes them using the Python script (model), and outputs the resulting probability of the target variable being equal to one. \n\nThe project can be run locally as a web application or viewed as a Jupyter Notebook. The creation of the ML model was divided into separate notebooks for data cleaning and model creation. \nScreenshots of the project, instructions on how to run the project locally or view the notebooks, can be found in the README file of the GitHub repository.',
-    link: 'https://github.com/vlad-lis/ML-predict-bullying',
-    readme_link: 'https://github.com/vlad-lis/ML-predict-bullying#readme',
-  },
-  {
-    id: 5,
-    name: 'ML - Car Price Prediction',
-    brief: 'Python',
-    tools: 'Python (Scikit-learn, Pandas, Numpy)',
-    details: 'A machine learning model (linear regression), which aims to predict the price of used cars. The model can be executed either through the terminal as a Python script (prompting for inputs and outputting the predicted price) or viewed as a Jupyter Notebook (which also includes a function that prompts for inputs and outputs the predicted price). \n\nSome results of the predicted car price may be skewed due to the fact that certain makes/models are underrepresented in the provided dataset. However, not all of them were removed during the data cleaning process for demonstration purposes. \n\nScreenshots of the project, instructions on how to run the project locally or view the notebook, can be found in the README file of the GitHub repository.',
-    link: 'https://github.com/vlad-lis/Ironhack-midterm',
-    readme_link: 'https://github.com/vlad-lis/Ironhack-midterm#readme',
-  },
-  {
     id: 6,
-    name: 'ML - Song Recommender',
-    brief: 'Python',
-    tools: 'Python (Scikit-learn, Pandas, Numpy)',
-    details: 'A machine learning model (K-Means Clustering) is utilized to recommend songs based on user input and various features such as danceability, energy, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, and tempo. \n\nThe current data set consists of over 40,000 songs, and the accuracy of the recommendations relies on the size and diversity of songs within the data set. \n\nScreenshot of the project can be found in the README file of the GitHub repository.',
-    link: 'https://github.com/vlad-lis/Song-Recommender',
-    readme_link: 'https://github.com/vlad-lis/Song-Recommender#readme',
-  },
-  {
-    id: 7,
     name: 'Card Hub',
     brief: 'JavaScript',
-    tools: 'JavaScript (ReactJS, Express.js), HTML, CSS',
-    details: 'The repository contains both the back-end (API) and front-end components of the application. This application allows users to create cards, which include a name, image, a like button, and a likes counter. The back-end component features several endpoints for saving, liking, and deleting cards, as well as user registration, login, logout, and profile or avatar editing. \n\nThe project is deployed on a virtual machine (VM). During the deployment process, the VM (Ubuntu) was configured by setting up an SSH key pair, installing core packages such as Node.js, MongoDB, and Git, and configuring Nginx, PM2, and Certbot. \nThe deployment links, instructions on how to run the project locally, and screenshots of the project can be found in the README file of the GitHub repository.',
+    tools: 'JavaScript, React, Node.js (Express.js), HTML, CSS',
+    details:
+      'The repository contains both the back-end (API) and front-end components of the application. This application allows users to create cards, which include a name, image, a like button, and a likes counter. The back-end component features several endpoints for saving, liking, and deleting cards, as well as user registration, login, logout, and profile or avatar editing. \n\nThe project is deployed on a virtual machine (VM). During the deployment process, the VM (Ubuntu) was configured by setting up an SSH key pair, installing core packages such as Node.js, MongoDB, and Git, and configuring Nginx, PM2, and Certbot. \nThe deployment links, instructions on how to run the project locally, and screenshots of the project can be found in the README file of the GitHub repository.',
     link: 'https://github.com/vlad-lis/react-mesto-api-full-gha',
     readme_link: 'https://github.com/vlad-lis/react-mesto-api-full-gha#readme',
   },
   {
+    id: 7,
+    name: 'ML - Assessment of Vulnerability',
+    brief: 'Python, JavaScript',
+    tools:
+      'Python (Scikit-learn, Pandas, Numpy), JavaScript (React, Express.js), HTML, CSS.',
+    details:
+      'A machine learning model (random forest classifier), which was trained on a dataset from a school-based survey conducted in Argentina in 2018. The model attempts to predict the vulnerability to bullying (target variable) based on provided inputs. It is important to note that the model is created solely for demonstration purposes and does not claim to provide any insights on the issue. \n\nTo facilitate the input process during the demonstration, a simple React application was developed along with an API that features a single endpoint. This endpoint receives inputs, processes them using the Python script (model), and outputs the resulting probability of the target variable being equal to one. \n\nThe project can be run locally as a web application or viewed as a Jupyter Notebook. The creation of the ML model was divided into separate notebooks for data cleaning and model creation. \nScreenshots of the project, instructions on how to run the project locally or view the notebooks, can be found in the README file of the GitHub repository.',
+    link: 'https://github.com/vlad-lis/ML-assess-vulnerability',
+    readme_link: 'https://github.com/vlad-lis/ML-assess-vulnerability#readme',
+  },
+  {
     id: 8,
+    name: 'ML - Car Price Prediction',
+    brief: 'Python',
+    tools: 'Python (Scikit-learn, Pandas, Numpy)',
+    details:
+      'A machine learning model (linear regression), which aims to predict the price of used cars. The model can be executed either through the terminal as a Python script (prompting for inputs and outputting the predicted price) or viewed as a Jupyter Notebook (which also includes a function that prompts for inputs and outputs the predicted price). \n\nSome results of the predicted car price may be skewed due to the fact that certain makes/models are underrepresented in the provided dataset. However, not all of them were removed during the data cleaning process for demonstration purposes. \n\nScreenshots of the project, instructions on how to run the project locally or view the notebook, can be found in the README file of the GitHub repository.',
+    link: 'https://github.com/vlad-lis/ML-price-prediction',
+    readme_link: 'https://github.com/vlad-lis/ML-price-prediction#readme',
+  },
+  {
+    id: 9,
+    name: 'ML - Song Recommender',
+    brief: 'Python',
+    tools: 'Python (Scikit-learn, Pandas, Numpy)',
+    details:
+      'A machine learning model (K-Means Clustering) is utilized to recommend songs based on user input and various features such as danceability, energy, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, and tempo. \n\nThe current data set consists of over 40,000 songs, and the accuracy of the recommendations relies on the size and diversity of songs within the data set. \n\nScreenshot of the project can be found in the README file of the GitHub repository.',
+    link: 'https://github.com/vlad-lis/ML-song-recommender',
+    readme_link: 'https://github.com/vlad-lis/ML-song-recommender#readme',
+  },
+  {
+    id: 10,
     name: 'Adaptive Web Page',
     brief: 'HTML, CSS',
     tools: 'HTML, CSS',
-    details: 'A static page with responsive CSS designed for different screen resolutions. The page was created as an exercise in adaptive CSS during a web development course, adjusting the style based on the screen resolution. \n\nThe page is deployed on GitHub Pages (the deployment link can be found in the README file).',
+    details:
+      'A static page with responsive CSS designed for different screen resolutions. The page was created as an exercise in adaptive CSS during a web development course, adjusting the style based on the screen resolution. \n\nThe page is deployed on GitHub Pages (the deployment link can be found in the README file).',
     link: 'https://github.com/vlad-lis/russian-travel',
     readme_link: 'https://github.com/vlad-lis/russian-travel#readme',
   },
   {
-    id: 9,
+    id: 11,
     name: 'Static Web Page',
     brief: 'HTML, CSS',
     tools: 'HTML, CSS',
-    details: 'A static page designed for resolutions of 1100px and higher. The page was created as a practice exercise for HTML and CSS tools, including iframes and keyframes. \n\nThe page is deployed on GitHub Pages (the deployment link can be found in the README file).',
+    details:
+      'A static page designed for resolutions of 1100px and higher. The page was created as a practice exercise for HTML and CSS tools, including iframes and keyframes. \n\nThe page is deployed on GitHub Pages (the deployment link can be found in the README file).',
     link: 'https://github.com/vlad-lis/how-to-learn',
     readme_link: 'https://github.com/vlad-lis/how-to-learn#readme',
   },
@@ -105,9 +136,11 @@ const projects = [
 
 const about = {
   title: 'What is this?',
-  briefInfo: 'This is a minimalistic React application that was created as an addition to a CV, serving as a list of projects along with their descriptions.',
+  briefInfo:
+    'This is a minimalistic React application that was created as an addition to a CV, serving as a list of projects along with their descriptions.',
   projectsInfo: '',
-  repositoryInfo: 'If you\'d like to examine the source code of this application, you\'re welcome to browse its GitHub repository by clicking ',
+  repositoryInfo:
+    "If you'd like to examine the source code of this application, you're welcome to browse its GitHub repository by clicking ",
   repositoryLinkText: 'this link.',
   repositoryLinkUrl: 'https://github.com/vlad-lis/portfolio',
   contacts: 'Contacts:',
@@ -121,6 +154,4 @@ const about = {
   linkedInName: 'in/vladislav-lis',
 };
 
-export {
-  navLinks, footerContent, projectContent, projects, about,
-};
+export { navLinks, footerContent, projectContent, projects, about };

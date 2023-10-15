@@ -17,22 +17,28 @@ function App() {
   }, []);
 
   return (
-    <div className="root">
+    <div className='root'>
       <Routes>
-        <Route path='/' element={
-          <>
-            <Header />
-            <Projects />
-            <Footer />
-          </>
-        } />
-        <Route path='/about' element={
-          <>
-            <Header />
-            <About />
-            <Footer />
-          </>
-        } />
+        <Route
+          path='/'
+          element={
+            <>
+              <Header />
+              <Projects />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path='/about'
+          element={
+            <>
+              <Header />
+              <About />
+              <Footer />
+            </>
+          }
+        />
       </Routes>
     </div>
   );
