@@ -24,9 +24,9 @@ const projects = [
     id: 1,
     name: 'Lenta project (Hackathon)',
     brief: 'TypeScript',
-    tools: 'TypeScript, React, CSS (SASS), HTML',
+    tools: 'TypeScript, React, CSS (SCSS), HTML',
     details:
-      'This project was developed for the retail company "Lenta." Its primary purpose is to visualize actual sales data and forecasts. Data visualization is achieved using the Chart.js and React-table libraries. The application receives data from the backend, processes it, and then displays corresponding tables and charts with an option to import data into an .xlsx file. \n\nCurrently, due to the absence of complete forecast data provided by the API, the Excel import functionality is limited to actual data, and the charts display data stored in a local JSON file. The description of the project can be fuond in the README file of the repository (in Russian).',
+      'This project was developed for the retail company "Lenta." Its primary purpose is to visualize actual sales data and forecasts. Data visualization is achieved using the Chart.js and React-table libraries. The application receives data from the backend, processes it, and then displays corresponding tables and charts with an option to import data into an .xlsx file. \n\nCurrently, due to the absence of complete forecast data provided by the API, the Excel import functionality is limited to actual data, and the charts display data stored in a local JSON file. The description of the project can be found in the README file of the repository (in Russian).',
     link: 'https://github.com/Hackathon-Lenta-Team2/frontend',
     readme_link: 'https://github.com/Hackathon-Lenta-Team2/frontend#readme',
   },
@@ -34,7 +34,7 @@ const projects = [
     id: 2,
     name: 'BotDepot (in development)',
     brief: 'JavaScript',
-    tools: 'JavaScript, React, CSS (SASS), HTML',
+    tools: 'JavaScript, React, CSS (SCSS), HTML',
     details:
       "BotsDepot is an application that serves as a marketplace for transport bots. It is currently under development by a small team consisting of frontend and backend developers, UX/UI designers, and QA specialists. The project's primary objective is to provide a platform for bot creators to list their products on the marketplace, and for potential buyers to browse, review, and purchase the bots they require. \n\nMy current role in the development process focuses on the main page, which includes the list of available bots and carousels for banners and categories. These carousels are implemented using the react-multi-carousel library.",
     link: 'https://github.com/Marketplace-telegram-bots-for-transport/frontend/tree/develop',
