@@ -22,6 +22,10 @@ function App() {
     setIsLangPopupOpen(!isLangPopupOpen);
   };
 
+  const handlePopupClose = () => {
+    setIsLangPopupOpen(false);
+  };
+
   useEffect(() => {
     WebFont.load({
       custom: {
@@ -38,6 +42,7 @@ function App() {
         isLangPopupOpen={isLangPopupOpen}
         onLanguageChange={handleLanguageChange}
         onLangPopupClick={handlePopupClick}
+        onPopupClose={handlePopupClose}
       />
       <Routes>
         <Route path='/' element={<Projects lang={selectedLanguage} />} />

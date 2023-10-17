@@ -1,19 +1,64 @@
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
+import { useEffect, useRef } from 'react'; // Import useEffect and useRef
 import { navLinksEN, navLinksRU } from '../../utils/staticContent';
 
-function Header({ lang, onLanguageChange, isLangPopupOpen, onLangPopupClick }) {
+function Header({
+  lang,
+  onLanguageChange,
+  isLangPopupOpen,
+  onLangPopupClick,
+  onPopupClose,
+}) {
   const linkClassMovies = (navData) =>
     navData.isActive ? 'header__link header__link_active' : 'header__link';
+
   const langPopupClass = isLangPopupOpen
     ? 'header__lang-popup'
     : 'header__lang-popup_hidden';
   const navLinks = lang === 'En' ? navLinksEN : navLinksRU;
 
+  // ref to the language popup
+  const langPopupRef = useRef(null);
+
+  // close language popup on escape keydown
+  useEffect(() => {
+    const handleEscapeKeyPress = (e) => {
+      if (e.key === 'Escape') {
+        onPopupClose();
+      }
+    };
+
+    window.addEventListener('keydown', handleEscapeKeyPress);
+
+    return () => {
+      window.removeEventListener('keydown', handleEscapeKeyPress);
+    };
+  });
+
+  // close language popup on click outside
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (
+        isLangPopupOpen &&
+        langPopupRef.current &&
+        !langPopupRef.current.contains(e.target)
+      ) {
+        onPopupClose();
+      }
+    };
+
+    window.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      window.removeEventListener('click', handleOutsideClick);
+    };
+  }, [isLangPopupOpen, onPopupClose]);
+
   return (
     <header className='header'>
       <div className='header__content'>
-        <div className='header__lang-container'>
+        <div className='header__lang-container' ref={langPopupRef}>
           <button className='header__lang' onClick={onLangPopupClick}>
             <div className='header__lang-icon' />
             <p className='header__lang-chosen'>{lang}</p>
@@ -54,6 +99,7 @@ Header.propTypes = {
   lang: PropTypes.string,
   isLangPopupOpen: PropTypes.bool,
   onLangPopupClick: PropTypes.func,
+  onPopupClose: PropTypes.func,
 };
 
 Header.defaultProps = {
@@ -61,6 +107,7 @@ Header.defaultProps = {
   lang: '',
   isLangPopupOpen: false,
   onLangPopupClick: () => {},
+  onPopupClose: () => {},
 };
 
 export default Header;

@@ -34,6 +34,10 @@
   opacity: 0.7;
 }
 
+.header__lang:focus {
+  outline: none;
+}
+
 .header__lang-icon {
   background-image: url('../../images/icons8-globe-64.png');
   width: 25px;
@@ -43,11 +47,13 @@
 
 .header__lang-chosen {
   margin: 0;
+  color: #000;
 }
 
 .header__lang-popup {
   width: 90px;
   position: absolute;
+  z-index: 999;
   top: 130%;
   display: flex;
   flex-direction: column;
@@ -66,6 +72,7 @@
   border: none;
   background-color: transparent;
   text-align: left;
+  color: #000;
 }
 
 .header__lang-choice:hover {
