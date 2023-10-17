@@ -1,7 +1,5 @@
 .header {
   background-color: #eae7dc;
-  /* background: linear-gradient(to right, rgb(234 231 220 / 0) 5%, #eae7dc 10% 85%, rgb(234 231 220 / 0) 95%); */
-  /* width: 97vw; */
   width: 100%;
   min-height: 30px;
   display: flex;
@@ -10,14 +8,75 @@
 
 .header__content {
   width: 100%;
-  max-width: 768px;
+  max-width: 668px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   justify-self: center;
+  padding: 15px 50px;
 }
 
-.header__container {
-  padding: 15px 50px 15px 15px;
+.header__lang-container {
+  position: relative;
+}
+
+.header__lang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.header__lang:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.header__lang-icon {
+  background-image: url('../../images/icons8-globe-64.png');
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+}
+
+.header__lang-chosen {
+  margin: 0;
+}
+
+.header__lang-popup {
+  width: 90px;
+  position: absolute;
+  top: 130%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px;
+  gap: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px #000;
+}
+
+.header__lang-popup_hidden {
+  display: none;
+}
+
+.header__lang-choice {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+}
+
+.header__lang-choice:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+.header__nav-container {
+  display: flex;
+  align-items: center;
 }
 
 .header__nav {
@@ -36,23 +95,17 @@
 
 .header__link:hover {
   cursor: pointer;
-  opacity: .6;
-  transition: all .4s;
+  opacity: 0.6;
+  transition: all 0.4s;
 }
 
 .header__link_active {
   text-decoration: underline;
 }
 
-/* @media screen and (max-width: 1023px) {
-  .header {
-    background: linear-gradient(to right, rgb(234 231 220 / 0) 5%, #eae7dc 15% 85%, rgb(234 231 220 / 0) 95%);
-  }
-} */
-
 @media screen and (min-width: 100px) and (max-width: 424px) {
-  .header__container {
-    padding: 10px 25px 15px 10px;
+  .header__content {
+    padding: 15px 25px;
   }
 
   .header__nav {

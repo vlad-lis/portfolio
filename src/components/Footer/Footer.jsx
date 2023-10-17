@@ -1,6 +1,10 @@
+import PropTypes from 'prop-types';
 import { footerContent } from '../../utils/staticContent';
 
-function Footer() {
+function Footer({ lang }) {
+  const githubText =
+    lang === 'En' ? footerContent.github_text_EN : footerContent.github_text_RU;
+
   return (
     <footer className='footer'>
       <div className='footer__content'>
@@ -12,12 +16,20 @@ function Footer() {
             target='_blank'
             rel='noreferrer'
           >
-            {footerContent.github_text}
+            {githubText}
           </a>
         </div>
       </div>
     </footer>
   );
 }
+
+Footer.propTypes = {
+  lang: PropTypes.string,
+};
+
+Footer.defaultProps = {
+  lang: '',
+};
 
 export default Footer;

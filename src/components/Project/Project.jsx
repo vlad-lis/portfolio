@@ -2,15 +2,30 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { projectContent } from '../../utils/staticContent';
 
-function Project({ project }) {
+function Project({ lang, project }) {
   const {
     detailsBtnMinus,
     detailsBtnPlus,
-    detailsBtnText,
-    github,
-    tools,
-    description,
+    detailsBtnTextEN,
+    githubEN,
+    toolsEN,
+    descriptionEN,
+    githubRU,
+    toolsRU,
+    descriptionRU,
+    detailsBtnTextRU,
   } = projectContent;
+
+  // fields
+  const github = lang === 'En' ? githubEN : githubRU;
+  const tools = lang === 'En' ? toolsEN : toolsRU;
+  const description = lang === 'En' ? descriptionEN : descriptionRU;
+
+  // details
+  const details = lang === 'En' ? project.detailsEN : project.detailsRU;
+  const detailsBtnText = lang === 'En' ? detailsBtnTextEN : detailsBtnTextRU;
+
+  // expand details
   const [expandedDetails, setExpandedDetails] = useState(false);
   const detailsClass = `project__details ${
     expandedDetails ? 'project__details_expanded' : ''
@@ -76,7 +91,7 @@ function Project({ project }) {
         <div className='project__details-text-container'>
           <p className='project__details-heading'>{description}</p>
           <p className='project__details-text'>
-            {addReadmeLink(project.details, project.readme_link)}
+            {addReadmeLink(details, project.readme_link)}
           </p>
         </div>
       </div>
@@ -85,23 +100,27 @@ function Project({ project }) {
 }
 
 Project.propTypes = {
+  lang: PropTypes.string,
   project: PropTypes.shape({
     name: PropTypes.string,
     brief: PropTypes.string,
     link: PropTypes.string,
     tools: PropTypes.string,
-    details: PropTypes.string,
+    detailsEN: PropTypes.string,
+    detailsRU: PropTypes.string,
     readme_link: PropTypes.string,
   }),
 };
 
 Project.defaultProps = {
+  lang: '',
   project: {
     name: '',
     brief: '',
     link: '',
     tools: '',
-    details: '',
+    detailsEN: '',
+    detailsRU: '',
     readme_link: '',
   },
 };

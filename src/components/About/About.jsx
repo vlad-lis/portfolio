@@ -1,13 +1,14 @@
+import PropTypes from 'prop-types';
 import { about } from '../../utils/staticContent';
 
-function About() {
+function About({ lang }) {
   const {
-    title,
-    contacts,
-    briefInfo,
+    titleEN,
+    contactsEN,
+    briefInfoEN,
     projectsInfo,
-    repositoryInfo,
-    repositoryLinkText,
+    repositoryInfoEN,
+    repositoryLinkTextEN,
     repositoryLinkUrl,
     emailTitle,
     emailAddress,
@@ -17,7 +18,19 @@ function About() {
     linkedInTitle,
     linkedInHref,
     linkedInName,
+    titleRU,
+    contactsRU,
+    briefInfoRU,
+    repositoryInfoRU,
+    repositoryLinkTextRU,
   } = about;
+
+  const title = lang === 'En' ? titleEN : titleRU;
+  const contacts = lang === 'En' ? contactsEN : contactsRU;
+  const briefInfo = lang === 'En' ? briefInfoEN : briefInfoRU;
+  const repositoryInfo = lang === 'En' ? repositoryInfoEN : repositoryInfoRU;
+  const repositoryLinkText =
+    lang === 'En' ? repositoryLinkTextEN : repositoryLinkTextRU;
 
   return (
     <main className='about'>
@@ -75,5 +88,13 @@ function About() {
     </main>
   );
 }
+
+About.propTypes = {
+  lang: PropTypes.string,
+};
+
+About.defaultProps = {
+  lang: '',
+};
 
 export default About;

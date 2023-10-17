@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import { projects } from '../../utils/staticContent';
 import Project from '../Project/Project';
 
-function Projects() {
+function Projects({ lang }) {
   return (
     <main className='projects'>
       <div className='projects__container'>
@@ -13,7 +14,7 @@ function Projects() {
               }`}
               key={project.id}
             >
-              <Project project={project} />
+              <Project lang={lang} project={project} />
             </li>
           ))}
         </ul>
@@ -21,5 +22,13 @@ function Projects() {
     </main>
   );
 }
+
+Projects.propTypes = {
+  lang: PropTypes.string,
+};
+
+Projects.defaultProps = {
+  lang: '',
+};
 
 export default Projects;
