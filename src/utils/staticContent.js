@@ -45,13 +45,13 @@ const projects = [
   },
   {
     id: 2,
-    name: 'BotDepot (in development)',
+    name: 'BotDepot',
     brief: 'JavaScript',
     tools: 'JavaScript, React, CSS (SCSS), HTML',
     detailsEN:
-      "BotsDepot is an application that serves as a marketplace for transport bots. It is currently under development by a small team consisting of frontend and backend developers, UX/UI designers, and QA specialists. The project's primary objective is to provide a platform for bot creators to list their products on the marketplace, and for potential buyers to browse, review, and purchase the bots they require. \n\nMy current role in the development process focuses on the main page, which includes the list of available bots and carousels for banners and categories. These carousels are implemented using the react-multi-carousel library.",
+      "BotsDepot is an application that serves as a marketplace for transport bots. Made by a small team consisting of frontend and backend developers, UX/UI designers, and QA specialists. The project's primary objective is to provide a platform for bot creators to list their products on the marketplace, and for potential buyers to browse, review, and purchase the bots they require. \n\nMy role was focused on the main page, which includes the list of available bots and carousels for banners and categories. These carousels are implemented using the react-multi-carousel library.",
     detailsRU:
-      'BotsDepot - это приложение-маркетплейс для ботов в сфере транспорта. В настоящее время оно находится в разработке командой, включающей в себя фронтенд и бэкенд разработчиков, UX/UI дизайнеров и QA специалистов. Основная цель проекта заключается в предоставлении платформы для создателей ботов, где они могут размещать свои продукты на рынке, а потенциальные покупатели могут просматривать, оценивать и покупать необходимые боты. \n\nМоя текущая роль в процессе разработки сосредотачивается на главной странице, которая включает в себя список доступных ботов и карусели (слайдеры) для баннеров и категорий. Эти карусели реализованы с использованием библиотеки react-multi-carousel.',
+      'BotsDepot - это приложение-маркетплейс для ботов в сфере транспорта. Сделано командой, включающей в себя фронтенд и бэкенд разработчиков, UX/UI дизайнеров и QA специалистов. Основная цель проекта заключается в предоставлении платформы для создателей ботов, где они могут размещать свои продукты на рынке, а потенциальные покупатели могут просматривать, оценивать и покупать необходимые боты. \n\nМоя роль в процессе разработки была сосредоточена на главной странице, которая включает в себя список доступных ботов и карусели (слайдеры) для баннеров и категорий. Эти карусели реализованы с использованием библиотеки react-multi-carousel.',
     link: 'https://github.com/Marketplace-telegram-bots-for-transport/frontend/tree/develop',
     readme_link:
       'https://github.com/Marketplace-telegram-bots-for-transport/frontend/tree/develop#readme',
