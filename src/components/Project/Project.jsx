@@ -84,15 +84,17 @@ function Project({ lang, project }) {
         </a>
       </div>
       <div className={detailsClass}>
-        <div className='project__details-text-container'>
-          <p className='project__details-heading'>{tools}</p>
-          <p className='project__details-text'>{project.tools}</p>
-        </div>
-        <div className='project__details-text-container'>
-          <p className='project__details-heading'>{description}</p>
-          <p className='project__details-text'>
-            {addReadmeLink(details, project.readme_link)}
-          </p>
+        <div className='project__details-wrapper'>
+          <div className='project__details-text-container'>
+            <p className='project__details-heading'>{tools}</p>
+            <p className='project__details-text'>{project.tools}</p>
+          </div>
+          <div className='project__details-text-container'>
+            <p className='project__details-heading'>{description}</p>
+            <p className='project__details-text'>
+              {addReadmeLink(details, project.readme_link)}
+            </p>
+          </div>
         </div>
       </div>
     </div>

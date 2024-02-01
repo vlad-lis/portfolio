@@ -26,11 +26,19 @@
 }
 
 .project__details {
-  display: none;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 200ms ease-in-out;
 }
 
 .project__details_expanded {
   margin: 10px 0;
+  grid-template-rows: 1fr;
+}
+
+.project__details-wrapper {
+  min-height: 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -53,7 +61,7 @@
   margin: 0;
   font-size: 15px;
   line-height: 19px;
-  font-family: "Ubuntu-light", "Arial", sans-serif;
+  font-family: 'Ubuntu-light', 'Arial', sans-serif;
 }
 
 .project__details-readme {
@@ -69,13 +77,13 @@
   width: 120px;
   height: 24px;
   font-size: 14px;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .project__details-btn:hover {
   cursor: pointer;
   background-color: #b8b8b6;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .project__details-btn-container {
